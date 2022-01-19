@@ -6,6 +6,8 @@ use GuzzleHttp\Client;
 
 class Stacks
 {
+    protected $client;
+
     public function __construct(private $url)
     {
         $this->client = new Client([
