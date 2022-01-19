@@ -60,7 +60,7 @@ class Stacks
         return json_decode($response, true);
     }
 
-    public function recentTransactions($queryParams = ['limit' => 30, 'offset' => 0, 'type' => [], 'unanchored' => false])
+    public function recentTransactions($queryParams = ['limit' => null, 'offset' => null, 'type' => null, 'unanchored' => null])
     {
         $response = $this->client
                         ->get('/extended/v1/tx', [
