@@ -19,7 +19,7 @@ composer require josecanhelp/stacks-php
 ```php
     $client = new Stacks\Stacks('http://localhost:3999');
 
-    $client->recentTransactions(['limit' => 1]);
+    $client->recentTransactions(1);
 ```
 
 ```bash

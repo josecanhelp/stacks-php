@@ -63,7 +63,7 @@ it('shows all nfts owned by an address', function () {
     $this->assertTrue(array_key_exists('nft_events', $response));
 });
 
-it('show account information for a principal', function () {
+it('shows account information for a principal', function () {
     $response = $this->stacks->accountInfo($this->principal);
 
     $this->assertTrue(array_key_exists('balance', $response));
